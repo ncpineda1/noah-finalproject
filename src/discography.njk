@@ -1,0 +1,26 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Discography{% endblock %}
+
+{% block page_description %}A list of the Queen discography from 1973 to 1995.{% endblock %}
+
+{% block content %}
+<article class="container">
+  <h1>Queen's Discography</h1>
+  <p>A list of all studio albums produced by Queen from 1973 to 1995.</p>
+  
+  <div class="row row-cols-1 row-cols-md-2 g-4 row-cols-lg-3">
+        {% for album in queen.discography %}
+        <div class="col">
+            <div class="card text-bg-dark h-100">
+                <img src="img/discs//{{ album.image }}" class="card-img-top" alt="Album Cover">
+                <div class="card-body">
+                    <h5 class="card-title">{{ album.title }}</h5>
+                    <h6>{{ album.year }}</h6>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</article>
+{% endblock %}
