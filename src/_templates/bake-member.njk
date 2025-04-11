@@ -13,17 +13,18 @@
     <div class="row">
       <div class="col-sm-4">
         <img src="../img/members//{{ image }}" alt="queen member" class="img-fluid">
+        <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
         <h1>{{ name }}</h1>
-        <h2>Fast Facts</h2>
+        <h3>Fast Facts</h3>
             <ul>
                 <li>Birth date: {{ birthdate }}</li>
                 <li>Birthplace: {{ birthplace }}</li>
                 <li>Instruments: {{ instruments }}</li>
                 <li>Tenure: {{ tenure }}</li>
             </ul>
-        <h2>About</h2>
+        <h3>About</h3>
           <div>
             {{ description | safe }}
           </div>
