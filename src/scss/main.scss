@@ -34,3 +34,15 @@ h1.display-5 {
 li {
   list-style-type: square;
 }
+
+a.card-link:link {
+  text-decoration: none;
+}
+
+a.card-link:hover {
+  text-decoration: underline;
+}
+
+a.card-link:visited {
+  text-decoration: none;
+}

@@ -7,7 +7,7 @@
     <h1>About the website</h1>
     <p>Whether you're a fan, casual listener, or just stopping by,  this is your go-to destination for discovering one of Britain's most legendary rock bands, including its members and discography.</p>
 
-    <h2>Members of Queen</h2>
+    <h3>Members of Queen</h3>
 
     <div class="row row-cols-1 row-cols-md-2 g-4 row-cols-lg-4">
         {% for member in queen.members %}
@@ -16,7 +16,7 @@
                 <img src="img/members//{{ member.imagebw }}" class="card-img-top" alt="Queen Member">
                 <div class="card-body">
                     <h5 class="card-title">{{ member.name }}</h5>
-                    <a href="blog/{{ member.slug }}.html" class="card-link">More about {{ member.name }}</a>
+                    <a href="members/{{ member.slug }}.html" class="card-link text-warning">More about {{ member.name }}</a>
                 </div>
             </div>
         </div>
