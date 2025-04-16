@@ -1,0 +1,32 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Tour Dates{% endblock %}
+
+{% block page_description %}A list of Queen tour dates spanning from Oct. 2023 to Feb. 2024.{% endblock %}
+
+{% block content %}
+<article class="container">
+    <h1 class="mb-4">2023-2024 Queen Tour Dates</h1>
+
+    <table class="table">
+    <thead class="table-dark">
+        <tr>
+        <th scope="col">Date</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+        <th scope="col">Venue</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+    {% for tours in queen.tour %}
+        <tr>
+            <td>{{ tours.date }}</td>
+            <td>{{ tours.city }}</td>
+            <td>{{ tours.country }}</td>
+            <td>{{ tours.venue }}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+</article>
+{% endblock %}
