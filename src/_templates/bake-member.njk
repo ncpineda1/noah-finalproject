@@ -16,7 +16,7 @@
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
-        <h1 id="name">{{ name }}</h1>
+        <h1 id="name"><b>{{ name }}</b></h1>
         <h3>Fast Facts</h3>
             <ul>
                 <li>Birth date: {{ birthdate }}</li>
@@ -24,6 +24,7 @@
                 <li>Instruments: {{ instruments }}</li>
                 <li>Tenure: {{ tenure }}</li>
             </ul>
+        <hr>
         <h3>About</h3>
           <div>
             {{ description | safe }}
